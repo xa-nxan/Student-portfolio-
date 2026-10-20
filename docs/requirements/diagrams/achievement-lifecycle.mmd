@@ -1,0 +1,9 @@
+stateDiagram-v2
+    [*] --> DRAFT
+    DRAFT --> PENDING_REVIEW: student submits
+    PENDING_REVIEW --> VERIFIED: reviewer approves
+    PENDING_REVIEW --> CHANGES_REQUESTED: reviewer requests changes
+    PENDING_REVIEW --> REJECTED: reviewer rejects
+    CHANGES_REQUESTED --> DRAFT: student edits
+    VERIFIED --> [*]
+    REJECTED --> [*]

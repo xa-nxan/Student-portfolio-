@@ -1,0 +1,11 @@
+classDiagram
+    StudentProfile "1" --> "many" Achievement
+    StudentProfile "1" --> "many" RecommendationRequest
+    RecommendationRequest "many" --> "many" Achievement
+    Achievement --> EvidenceItem
+    Achievement --> ActivityEvent
+    class StudentProfile { name; programme; skills; visibility }
+    class Achievement { title; category; status; reviewer }
+    class EvidenceItem { description; reference }
+    class RecommendationRequest { purpose; targetDate; status }
+    class ActivityEvent { event; actor; time }
