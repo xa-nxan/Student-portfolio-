@@ -13,6 +13,14 @@ npm run dev
 
 Checks: `npm run lint` and `npm run build`.
 
+## GitHub Pages
+
+The Vite base path is configured for the repository project site, and [deploy.yml](./.github/workflows/deploy.yml) deploys `dist/` automatically on pushes to `main` or through manual `workflow_dispatch`.
+
+Expected site URL: `https://xa-nxan.github.io/Student-portfolio-/`
+
+The repository must have GitHub Pages configured with **Source: GitHub Actions**. If the workflow has not previously deployed, enable Pages in the repository settings and wait for the first Actions run to complete.
+
 ## Login and demonstration journeys
 
 The initial screen is a login page. The current prototype uses a replaceable mock authentication service in [src/lib/mockAuth.ts](./src/lib/mockAuth.ts), with fictional accounts only. A six-digit numeric ID is accepted as a working `YYNNNN` assumption; the ID is not used to infer authorization. The account record resolves the role.
