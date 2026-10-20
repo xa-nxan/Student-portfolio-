@@ -29,3 +29,15 @@
 - Which records, if any, should be sourced from institutional systems?
 - What outcome would demonstrate value: completion, recommendation turnaround, student confidence, or employment support?
 - What exceptions or conflicting expectations would make the workflow fail?
+
+## Identity and institutional integration
+
+- Is the proposed six-digit `YYNNNN` student/staff identifier format correct?
+- Do all relevant staff categories use the same format?
+- How is an account's role authoritatively determined, and who owns that mapping?
+- Are students, lecturers, and administrators managed through the same identity provider?
+- Does AU ICT offer an approved SSO integration for external applications?
+- What authentication standards and policies must developers follow?
+- How should alumni access be managed after graduation?
+- How should external recipients access specifically shared portfolios without an AU staff ID?
+- Who is authorized to grant, review, and revoke permissions?
